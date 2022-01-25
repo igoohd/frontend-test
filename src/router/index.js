@@ -1,6 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import ProductList from "../views/ProductList.vue";
+import Home from "../views/Home.vue";
 import WishList from "../views/WishList.vue";
 
 Vue.use(VueRouter);
@@ -8,8 +8,8 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "ProductList",
-    component: ProductList,
+    name: "Home",
+    component: Home,
   },
   {
     path: "/lista-de-desejos",
