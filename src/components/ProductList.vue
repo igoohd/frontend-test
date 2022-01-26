@@ -3,10 +3,12 @@
     <ProductCard
       v-for="product in productListResult"
       :key="product.id"
+      :id="product.id"
       :currency-format="product.currencyFormat"
       :image-src="product.image"
       :name="product.title"
       :price="product.price"
+      :is-wish-list="isWishList"
     />
   </div>
 </template>
@@ -19,14 +21,14 @@ import { mapMutations, mapState } from "vuex";
 export default {
   name: "ProductList",
 
-  props: {
-    path: Array,
-  },
-
   components: { ProductCard },
 
+  props: {
+    isWishList: Boolean,
+  },
+
   created() {
-    this.getProductList();
+    this.isWishList ? this.getWishList() : this.getProductList();
   },
 
   methods: {
@@ -43,23 +45,19 @@ export default {
         this.setProductList(undefined);
       }
     },
+
+    getWishList() {
+      this.setProductList(this.wishList);
+    },
   },
 
   computed: {
-    ...mapState(["productList", "filteredProducts"]),
+    ...mapState(["filteredProducts", "productList", "wishList"]),
 
     productListResult() {
       return this.filteredProducts == ""
         ? this.productList
         : this.filteredProducts;
-    },
-
-    formattedPath() {
-      if (this.path.length === 1) {
-        return this.path[0];
-      } else {
-        return this.path.join(" > ");
-      }
     },
   },
 };

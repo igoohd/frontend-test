@@ -1,8 +1,8 @@
 <template>
-  <div class="home-page">
+  <div class="wish-page">
     <PageHeader />
-    <h1 class="title">Home</h1>
-    <ProductList />
+    <h1 class="title">Home > Lista de Desejos</h1>
+    <ProductList :is-wish-list="true" />
   </div>
 </template>
 
@@ -11,7 +11,7 @@ import PageHeader from "@/components/PageHeader";
 import ProductList from "@/components/ProductList";
 
 export default {
-  name: "Home",
+  name: "WishList",
 
   components: {
     PageHeader,
@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.home-page {
+.wish-page {
   > .title {
     font-weight: bold;
     font-size: 1.2rem;
