@@ -2,7 +2,7 @@
   <div class="home-page">
     <PageHeader />
     <h1 class="title">Home</h1>
-    <ProductList :path="routePath" />
+    <ProductList />
   </div>
 </template>
 
@@ -16,12 +16,6 @@ export default {
   components: {
     PageHeader,
     ProductList,
-  },
-
-  computed: {
-    routePath() {
-      return [this.$router.currentRoute.name];
-    },
   },
 };
 </script>
