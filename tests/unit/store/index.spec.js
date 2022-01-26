@@ -13,14 +13,6 @@ describe('Vuex Store (index.js)', () => {
         const localVue = createLocalVue()
         localVue.use(Vuex)
 
-        const resetState = () => {
-            return {
-                filteredProducts: [],
-                productList: [],
-                wishList: [],
-            }
-        }
-
         it('setProductList should set a list of products in state  if state productList', () => {
             store.commit('setProductList', productListMock)
 
