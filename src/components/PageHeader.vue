@@ -43,8 +43,8 @@ export default {
 
   data() {
     return {
-      userLatitude: undefined,
-      userLongitude: undefined,
+      userLatitude: "",
+      userLongitude: "",
       userCity: "...",
     };
   },
@@ -64,9 +64,9 @@ export default {
       try {
         var { data } = await axios.get(
           "https://maps.googleapis.com/maps/api/geocode/json?latlng=" +
-            this.Userlatitude +
+            this.userLatitude +
             "," +
-            this.Userlongitude +
+            this.userLongitude +
             "&key=AIzaSyAMdrjXpdrf58MVgdRYw9MUngqpzk8Ds-Q"
         );
         if (data.error_message) {
@@ -84,8 +84,8 @@ export default {
 
     getUserLocation() {
       const success = (position) => {
-        this.Userlatitude = position.coords.latitude;
-        this.Userlongitude = position.coords.longitude;
+        this.userLatitude = position.coords.latitude;
+        this.userLongitude = position.coords.longitude;
 
         this.getStreetAddressFrom();
       };
