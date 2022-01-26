@@ -16,7 +16,12 @@
           Lista de desejos
         </li>
       </ul>
-      <input type="text" class="input" placeholder="Busca" />
+      <input
+        @input="searchProduct"
+        type="text"
+        class="input"
+        placeholder="Busca"
+      />
     </div>
   </header>
 </template>
@@ -26,6 +31,7 @@ import HeartIcon from "@/components/icons/HeartIcon";
 import LocationDotIcon from "@/components/icons/LocationDotIcon";
 import PhoneIcon from "@/components/icons/PhoneIcon";
 import axios from "axios";
+import { mapMutations, mapState } from "vuex";
 export default {
   name: "PageHeader",
 
@@ -48,6 +54,8 @@ export default {
   },
 
   methods: {
+    ...mapMutations(["setFilteredProducts"]),
+
     callPhoneCentral() {
       window.open("tel:3125574039");
     },
@@ -61,12 +69,9 @@ export default {
             this.Userlongitude +
             "&key=AIzaSyAMdrjXpdrf58MVgdRYw9MUngqpzk8Ds-Q"
         );
-        console.log("data", data);
         if (data.error_message) {
           console.log(data.error_message);
-          console.log("if", data);
         } else {
-          console.log("else", data);
           this.userCity =
             data.results[0].address_components[3].long_name +
             " - " +
@@ -100,6 +105,19 @@ export default {
     redirectToWishList() {
       this.$router.push({ name: "WishList" });
     },
+
+    searchProduct(event) {
+      const filteredProducts = this.productList.filter((obj) =>
+        JSON.stringify(obj)
+          .toLowerCase()
+          .includes(event.target.value.toLowerCase())
+      );
+      this.setFilteredProducts(filteredProducts);
+    },
+  },
+
+  computed: {
+    ...mapState(["productList"]),
   },
 };
 </script>
@@ -157,7 +175,7 @@ export default {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .custom-header {
     flex-direction: column;
   }
