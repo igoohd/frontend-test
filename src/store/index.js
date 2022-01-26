@@ -7,15 +7,23 @@ export default new Vuex.Store({
   state: {
     filteredProducts: [],
     productList: [],
-    wishList: []
+    wishList: [],
   },
   mutations: {
+    addProductToWishList(state, id) {
+      const product = state.productList.find((product) => product.id === id);
+      state.wishList.push(product);
+    },
+    removeProductFromWishList(state, id) {
+      const index = state.wishList.indexOf(id);
+      state.wishList.splice(index, 1);
+    },
     setFilteredProducts(state, payload) {
-      state.filteredProducts = payload
+      state.filteredProducts = payload;
     },
     setProductList(state, payload) {
-      state.productList = payload
-    }
+      state.productList = payload;
+    },
   },
   actions: {},
   modules: {},
