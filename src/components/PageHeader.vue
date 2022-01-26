@@ -99,7 +99,7 @@ export default {
     },
 
     redirectToProductList() {
-      this.$router.push({ name: "ProductList" });
+      this.$router.push({ name: "Home" });
     },
 
     redirectToWishList() {
