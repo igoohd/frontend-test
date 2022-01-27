@@ -5,7 +5,7 @@ import WishList from "../views/WishList.vue";
 
 Vue.use(VueRouter);
 
-const routes = [
+export const routes = [
   {
     path: "/",
     name: "Home",
