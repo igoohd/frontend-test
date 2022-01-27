@@ -68,12 +68,15 @@ Biblioteca de testes unitários para VueJs, responsável por ajudar no desenvolv
 Ferramenta responsável por encontrar e reportar problemas no código JavaScript, foi utilizado para evitar bugs e manter o código consistente. Além de ter integração com o Vue, Prettier e diversas outras tecnologias, criando regras e padrões de códigos que podem ser corrigidos automaticamente.
 
 
-### 👀 Metodologias
+### 👀 Observações
 
 <b>1- RSCSS (https://rscss.io/)</b>
 Conjunto de regras para escrita e estruturação do CSS, utilizado para facilitar a manutenção da estilização do projeto, todas classes, representam um componente, elemento ou  variante, dando sentido à estilização. Por ser um projeto pequeno preferi utilizá-lo ao invés do BEM(http://getbem.com/introduction/) pois é mais simples e prático de se utilizar.
 
 <b>2- Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/)</b>
 Convenção de commits utilizada para manter um bom tracking de steps do projeto, todas as branchs foram criadas a partir da Master, isolando cada feature do projeto, além de todos commits seguirem as regras da convenção organizadas em feature, fix, refactor, entre outras.
+
+<b>3- Responsividade </b>
+O layout mobile começa a ser aplicado à partir de 800px de largura nos dispositivos, como não temos o layout no Figma ou outro software, peguei esta largura como base por acreditar encaixar melhor para o layout fornecido pela LuizaLabs.
 
 [⬆ Voltar ao topo](#MagaNets)<br>
