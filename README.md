@@ -73,4 +73,4 @@ Ferramenta responsável por encontrar e reportar problemas no código JavaScript
 <b>1- RSCSS (https://rscss.io/)</b>
 Conjunto de regras para escrita e estruturação do CSS, utilizado para facilitar a manutenção da estilização do projeto, todas classes, representam um componente, elemento ou  variante, dando sentido à estilização. Por ser um projeto pequeno preferi utilizá-lo ao invés do BEM(http://getbem.com/introduction/) pois é mais simples e prático de se utilizar.
 
-[⬆ Voltar ao topo](#MegaNets)<br>
+[⬆ Voltar ao topo](#MagaNets)<br>
