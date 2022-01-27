@@ -43,6 +43,7 @@ export default {
 
   data() {
     return {
+      searchedProducts: [],
       userLatitude: "",
       userLongitude: "",
       userCity: "...",
@@ -107,12 +108,12 @@ export default {
     },
 
     searchProduct(event) {
-      const filteredProducts = this.productList.filter((obj) =>
+      this.searchedProducts = this.productList.filter((obj) =>
         JSON.stringify(obj)
           .toLowerCase()
           .includes(event.target.value.toLowerCase())
       );
-      this.setFilteredProducts(filteredProducts);
+      this.setFilteredProducts(this.searchedProducts);
     },
   },
 
