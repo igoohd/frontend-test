@@ -51,7 +51,7 @@ Caso rode o script com cobertura de testes, você terá acesso ao relatório na 
 
 Este projeto teve uso de algumas tecnologias importantes para o desenvolvimento front-end, muitas delas poderiam não ser utilizadas em um projeto simples como esse, porém, preferi utilizar ao máximo para mostrar meu conhecimento com elas. Abaixo explico os motivos de ter utilizado e documentações para conferência:
 
-<b>1- VueJS</b> (https://vuejs.org/)</b>
+<b>1- VueJS (https://vuejs.org/)</b>
 Framework Javascript utilizado para criação de interfaces, foi utilizado apenas para demonstração do meu conhecimento com a tecnologia, tentei utilizar ao máximo tudo o que ele pode oferecer como Vuex, Vue Router, Vue test utils e etc. A versão 2 foi utilizada por ser a versão mais popular, utilizada e estável até o momento deste teste.
 
 <b>2- Sass (https://sass-lang.com/)</b>
@@ -72,5 +72,8 @@ Ferramenta responsável por encontrar e reportar problemas no código JavaScript
 
 <b>1- RSCSS (https://rscss.io/)</b>
 Conjunto de regras para escrita e estruturação do CSS, utilizado para facilitar a manutenção da estilização do projeto, todas classes, representam um componente, elemento ou  variante, dando sentido à estilização. Por ser um projeto pequeno preferi utilizá-lo ao invés do BEM(http://getbem.com/introduction/) pois é mais simples e prático de se utilizar.
+
+<b>2- Conventional Commits (https://www.conventionalcommits.org/en/v1.0.0/)</b>
+Convenção de commits utilizada para manter um bom tracking de steps do projeto, todas as branchs foram criadas a partir da Master, isolando cada feature do projeto, além de todos commits seguirem as regras da convenção organizadas em feature, fix, refactor, entre outras.
 
 [⬆ Voltar ao topo](#MagaNets)<br>
