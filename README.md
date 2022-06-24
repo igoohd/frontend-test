@@ -58,7 +58,7 @@ Framework Javascript utilizado para criação de interfaces, foi utilizado apena
 A extensão de linguagem CSS Sass foi utilizada para dar "super-poderes" ao CSS comum. Evitar reescrita de código, tornar a estilização mais legível e bem estruturada.
 
 <b>3- Jest (https://jestjs.io/)</b>
-Framework de testes JS utilizado para testar a aplicação em si, suas funcionalidades e evitar possíveis erros em alterações de código, esse projeto teve 85% de cobertura de testes como mostra a imagem abaixo:
+Framework de testes JS utilizado para testar a aplicação em si, e evitar possíveis erros em alterações de código. Esse projeto teve 85% de cobertura de testes como mostra a imagem abaixo:
 ![image](https://user-images.githubusercontent.com/85634547/151276104-ddb79c84-9738-410f-aee7-6b9d43a00bb6.png)
 
 <b>4- VueTestUtils (https://vue-test-utils.vuejs.org/)</b>
