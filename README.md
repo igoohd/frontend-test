@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/iuricode/README-template?style=for-the-badge)
 
 ![Alt Text](https://media4.giphy.com/media/iIqmM5tTjmpOB9mpbn/giphy.gif?cid=ecf05e47ldi0e4evzev6amjyx288h8hqczd5x057mff7ewl9&rid=giphy.gif&ct=g)
-> Este projeto é um teste prático de frontend realizado para o LuizaLabs. Pode ser acessado pelo link: https://stoic-meitner-be6279.netlify.app/
+> Este projeto é apenas um teste prático de frontend sem foco no design, apenas em funcionalidades. Pode ser acessado pelo link: https://stoic-meitner-be6279.netlify.app/
 
 ## 💻 Pré-requisitos
 
